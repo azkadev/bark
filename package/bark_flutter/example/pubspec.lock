@@ -33,6 +33,13 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.11.0"
+  bark_flutter:
+    dependency: "direct main"
+    description:
+      path: ".."
+      relative: true
+    source: path
+    version: "0.0.0"
   boolean_selector:
     dependency: transitive
     description:
@@ -143,10 +150,10 @@ packages:
     dependency: transitive
     description:
       name: galaxeus_lib
-      sha256: "796314a49beaf644cc0cbd50a31a1ff55991fa1f6408b0cb605c7c74b77316cf"
+      sha256: b19e3f389a5fb29429b5b2fe452443dfdc2893a7627556a1a9b25431f8ba2cf3
       url: "https://pub.dev"
     source: hosted
-    version: "0.0.64"
+    version: "0.0.75"
   get_it:
     dependency: transitive
     description:
@@ -159,10 +166,10 @@ packages:
     dependency: transitive
     description:
       name: http
-      sha256: "5895291c13fa8a3bd82e76d5627f69e0d85ca6a30dcac95c4ea19a5d555879c2"
+      sha256: "759d1a329847dd0f39226c688d3e06a6b8679668e350e2891a6474f8b4bb8525"
       url: "https://pub.dev"
     source: hosted
-    version: "0.13.6"
+    version: "1.1.0"
   http_parser:
     dependency: transitive
     description:
@@ -235,21 +242,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.0"
-  bark_flutter:
-    dependency: "direct main"
-    description:
-      path: ".."
-      relative: true
-    source: path
-    version: "0.0.0"
   packagex:
     dependency: "direct dev"
     description:
       name: packagex
-      sha256: e791c4a26f17d126c25b79c333353a3ae376b1f074864821c2094ab9e20c4f96
+      sha256: "1be4c337a9a0c750a43a3f21f14e7ae4bebc8125b3d3b22e9ceed2e59abeb0d7"
       url: "https://pub.dev"
     source: hosted
-    version: "0.0.25"
+    version: "0.0.28"
   path:
     dependency: transitive
     description:

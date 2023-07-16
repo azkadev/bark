@@ -10,8 +10,7 @@ import 'package:path/path.dart' as path;
 
 void main(List<String> args_raw) async {
   Future<Directory?> getPackageDirectory({
-    String package_name =
-        "package:bark_dart/bark_dart.dart",
+    String package_name = "package:bark_dart/bark_dart.dart",
   }) async {
     Uri? res = await Isolate.resolvePackageUri(Uri.parse(package_name));
     if (res == null) {
@@ -30,8 +29,7 @@ void main(List<String> args_raw) async {
   }
 
   Directory? base_directory_lib = (await getPackageDirectory(
-      package_name:
-          "package:bark_dart/bark_dart.dart"));
+      package_name: "package:bark_dart/bark_dart.dart"));
 
   if (base_directory_lib == null) {
     print("Maaf kami tidak bisa menemukan directory library");
@@ -204,8 +202,7 @@ Run "${name_exe} help <command>" for more information about a command.
   }
 
   if (command == "version") {
-    print(
-        "bark_dart version: 0.0.0 (stable) on ${Platform.operatingSystem}");
+    print("bark_dart version: 0.0.0 (stable) on ${Platform.operatingSystem}");
     exit(0);
   }
 

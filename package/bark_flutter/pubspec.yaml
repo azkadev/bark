@@ -1,5 +1,5 @@
 name: bark_flutter
-description: A new Flutter FFI plugin project.
+description: WIP Library Text To Speech From Suno AI's Bark in C/C++ for fast inference.
 version: 0.0.0
 repository: https://github.com/azkadev/azkadev.git
 issue_tracker: https://github.com/azkadev/azkadev.git
@@ -16,12 +16,12 @@ dependencies:
 
 dev_dependencies:
   ffi: ^2.0.2
-  ffigen: ^8.0.1
+  ffigen: ^8.0.2
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.0
+  flutter_lints: ^2.0.2
   packagex: ^0.0.28
-  msix: ^3.12.1
+  msix: ^3.15.1
 
 flutter: 
   plugin:
