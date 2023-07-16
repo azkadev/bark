@@ -1,0 +1,57 @@
+name: bark_flutter
+description: A new Flutter FFI plugin project.
+version: 0.0.0
+repository: https://github.com/azkadev/azkadev.git
+issue_tracker: https://github.com/azkadev/azkadev.git
+homepage: https://youtube.com/@azkadev
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=2.11.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.0.2
+
+dev_dependencies:
+  ffi: ^2.0.2
+  ffigen: ^8.0.1
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  packagex: ^0.0.28
+  msix: ^3.12.1
+
+flutter: 
+  plugin:
+    platforms:
+      android:
+        ffiPlugin: true
+      ios:
+        ffiPlugin: true
+      linux:
+        ffiPlugin: true
+      macos:
+        ffiPlugin: true
+      windows:
+        ffiPlugin: true
+ 
+msix_config: 
+  display_name: bark_flutter
+  install_certificate: false
+  # publisher_display_name: Azkadev
+  # identity_name: org.azkadev.bark_flutter
+  # msix_version: 0.0.0.0
+  # capabilities: internetClient, location, microphone, webcam
+
+packagex:
+  name: bark_flutter
+  dart_target: bark_flutter
+  flutter_target: main
+  dart_name: bark_flutter
+  flutter_name: bark_flutter
+  flutter_commands:
+    obfuscate: true
+    split-debug-info: 0.0.5
+  

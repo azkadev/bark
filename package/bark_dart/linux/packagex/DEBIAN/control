@@ -1,0 +1,10 @@
+Maintainer: "azkadev <azkadev@noemail.com>"
+Package: package-template-dart
+Version: 1.0.0
+Section: x11
+Priority: optional
+Architecture: amd64
+Essential: no
+Installed-Size: 0
+Description: "A sample command-line application."
+Homepage: "https://github.com/azkadev"

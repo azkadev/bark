@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+ln -s /usr/share/package-template-flutter/bark_flutter /usr/bin/package-template-flutter
+chmod +x /usr/bin/package-template-flutter
+exit 0

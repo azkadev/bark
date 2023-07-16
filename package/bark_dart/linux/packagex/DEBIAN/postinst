@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+ln -s /usr/share/package-template-dart/bark_dart /usr/bin/package-template-dart
+chmod +x /usr/bin/package-template-dart
+exit 0

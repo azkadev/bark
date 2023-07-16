@@ -1,0 +1,58 @@
+name: Web Release
+
+on: [workflow_dispatch]
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3 
+      - name: Set up Node js 
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: "3.10.0"
+          channel: "stable"
+          
+      - name: mkdir out
+        shell: bash
+        run: |
+          mkdir out
+          echo "
+          # Redirects from what the browser requests to what we serve
+
+          /blog /blog 200
+          /* /index.html  200
+          " > ./out/_redirects
+
+      - name: Flutter Build Web
+        shell: bash
+        run: |
+          cd web
+          flutter pub get
+          flutter build web --release
+          cp -r ./build/web/* ../out/
+
+      - name: Deploy to Netlify Galaxeus
+        uses: nwtgck/actions-netlify@v1.2
+        with:
+          publish-dir: './out'
+          production-branch: main
+          github-token: ${{ github.token }}
+          deploy-message: "Deploy from GitHub Actions"
+          enable-pull-request-comment: false
+          enable-commit-comment: true
+          overwrites-pull-request-comment: true
+          production-deploy: true
+        env:
+          NETLIFY_AUTH_TOKEN: y11Y5QfbE6_adsbd5f4gyhwfcsawevTIfdXUaTsafchS0
+          NETLIFY_SITE_ID: 13c2c1922-e2gb-4frd-9r04-v11vbacsdwr2f
+        timeout-minutes: 1
+ 

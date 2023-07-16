@@ -1,0 +1,47 @@
+name: bark_web
+description: A new Flutter project.
+version: 0.0.0
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  galaxeus_lib: ^0.0.74
+  url_launcher: ^6.1.11
+  universal_io: ^2.2.0
+  galaxeus_lib_flutter: ^0.0.8
+  cool_alert: ^2.0.1
+  pinput: ^2.2.31
+  url_strategy: ^0.2.0
+  go_router: ^7.0.1
+
+dev_dependencies:
+  flutter_lints: ^2.0.0
+  packagex: ^0.0.28
+  msix: ^3.14.2
+
+flutter:
+  uses-material-design: true
+
+  # assets:    
+  #   - assets/
+  #   - assets/icons/
+  #   - assets/user/
+    
+msix_config: 
+  display_name: bark_web
+  install_certificate: false
+  
+packagex:
+  name: bark_web
+  dart_target: bark_web
+  flutter_target: main
+  dart_name: bark_web
+  flutter_name: bark_web
+  flutter_commands:
+    obfuscate: true
+    split-debug-info: 0.0.5
+  

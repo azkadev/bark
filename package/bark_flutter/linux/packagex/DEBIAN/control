@@ -1,0 +1,10 @@
+Maintainer: "azkadev <azkadev@noemail.com>"
+Package: package-template-flutter
+Version: 0.0.0
+Section: x11
+Priority: optional
+Architecture: amd64
+Essential: no
+Installed-Size: 0
+Description: "A new Flutter FFI plugin project."
+Homepage: "https://github.com/azkadev"

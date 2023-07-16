@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Version=0.0.0
+Name=package-template-dart
+GenericName=General Application
+Exec=package-template-dart %U
+Categories=Music;Media;
+Keywords=Hello;World;Test;Application;
+StartupNotify=true
