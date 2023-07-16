@@ -65,5 +65,6 @@ import 'package:bark_dart/bark_dart.dart';
 
 1. [Bark Cpp](https://github.com/PABannier/bark.cpp)
 2. [GGML](https://github.com/ggerganov/ggml)
+3. [BARK ORIGIN](https://github.com/suno-ai/bark)
 
 
