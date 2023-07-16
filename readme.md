@@ -61,3 +61,9 @@ import 'package:bark_dart/bark_dart.dart';
 ```
 
 
+## Credit
+
+1. [Bark Cpp](https://github.com/PABannier/bark.cpp)
+2. [GGML](https://github.com/ggerganov/ggml)
+
+
