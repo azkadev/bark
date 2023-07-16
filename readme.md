@@ -1,5 +1,8 @@
 # Bark
 
+Bark is a transformer-based text-to-audio model created by Suno. Bark can generate highly realistic, multilingual speech as well as other audio - including music, background noise and simple sound effects. The model can also produce nonverbal communications like laughing, sighing and crying. To support the research community, we are providing access to pretrained model checkpoints, which are ready for inference and available for commercial use.
+
+
 
 ---
 
@@ -11,8 +14,8 @@
 
 | No | Device        | Os           | Ram  | CPU             |
 |----|---------------|--------------|------|-----------------|
-| 1. | Msi Modern 14 | Ubuntu 22.04 | 8 gb | Amd Ryzen 5500u |
-| 2. | Realme 5      | Android 11   | 3gb  | Snapdragon 665  |
+<!-- | 1. | Msi Modern 14 | Ubuntu 22.04 | 8 gb | Amd Ryzen 5500u |
+| 2. | Realme 5      | Android 11   | 3gb  | Snapdragon 665  | -->
 
 
 ### Development
@@ -42,7 +45,7 @@ cmake --build .
 ### Install Library
 
 ```bash
-dart pub add bark
+dart pub add bark_dart
 ```
 
 or flutter
@@ -54,7 +57,7 @@ dart pub add bark_flutter
 ### Import Library
 
 ```dart
-import 'package:bark/bark.dart';
+import 'package:bark_dart/bark_dart.dart';
 ```
 
 
