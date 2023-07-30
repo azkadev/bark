@@ -1,0 +1,6 @@
+[submodule "native_lib/barl.cpp"]
+	path = native_lib/barl.cpp
+	url = https://github.com/PABannier/bark.cpp.git
+[submodule "native_lib/lib/bark.cpp"]
+	path = native_lib/lib/bark.cpp
+	url = https://github.com/PABannier/bark.cpp.git
